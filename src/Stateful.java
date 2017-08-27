@@ -2,8 +2,9 @@ import java.lang.Object.*;
 
 /**
  * A mutable object that maintains state.&nbsp;Three components of state include textual, numerical, and logical data.
+ * @author  Dr. Jody Paul
  * @author  Heather DeMarco
- * @version CS4250 Fall 2017 v1.1
+ * @version CS4250 Fall 2017 v2.5.1
  */
 
 public class Stateful{
@@ -61,7 +62,7 @@ public class Stateful{
      * Modifies the state by inverting the logical value. If the state value was true, it is changed to false. If the state value was false, it is changed to true.
      */
     public void flip(){
-        if(stateTruth == true)
+        if(stateTruth)
             stateTruth = false;
         else
             stateTruth = true;
